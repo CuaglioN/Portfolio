@@ -1,0 +1,87 @@
+.pcContainer{
+    width: 50%;
+    max-width: 1000px;
+    height: 100vh;
+    max-height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pcMonitor{
+    border: solid 3px dimgray;
+    width: 80%;
+    max-width: 700px;
+    height: 45%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(49, 49, 49);
+}
+.pcCamera{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+    background-color: black;
+}
+.pcScreen{
+    height: 95%;
+    width: 95%;
+    background-color: black;
+    border: 1px darkgray;
+    border-radius: 3px;
+    padding:10px;
+    color: white;
+}
+.pcNake{
+    position: relative;
+    width: 5%;
+    height: 4%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    background-color: rgb(5, 5, 5);
+}
+.pcFoot{
+    width: 500%;
+    height: 20px;
+    background-color: rgb(5, 5, 5);
+    position: absolute;
+    bottom: 0;
+    left: -200%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.list{
+    margin-left: 20px;
+    font-size: 20px;
+    line-height: 50px;
+}
+.text{
+    font-size: 20px;
+    text-align: center;
+}
+.slide1{
+    padding: 10px 30px;
+    text-align: center;
+}
+.slide2{
+    padding: 10px 30px;
+}
+.slide3{
+    padding: 10px 30px;
+}
+.slide4{
+    padding: 10px 30px;
+}
+.nolist{
+    list-style: none;
+}

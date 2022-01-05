@@ -1,0 +1,20 @@
+.Wellcome{
+    position: absolute;
+    top: 80px;
+    left: 170px;
+    color:white;
+    font-size: 130px;
+    font-style: italic;
+}
+.appContainer{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media screen and (max-width: 1024px)  {
+    .appContainer{
+        flex-direction: column;
+    }
+}

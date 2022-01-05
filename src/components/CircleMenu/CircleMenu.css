@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, black, #121558);
+  }
+  .menu {
+    position: relative;
+    width: 150px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .menuList{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .option {
+    position: absolute;
+    left: 0;
+    list-style: none;
+    transform-origin: 320%;
+    transition: 0.5s;
+    transform: rotate(0deg) translateX(80px);
+  }
+  .optionIcon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
+    font-size: 2rem;
+    cursor: pointer;
+    padding:10px;
+  }
+  .option-icon:hover {
+    height: 61px;
+    width: 61px;
+    transition: 0.3s;
+    transform: translateX(-1px);
+  }
+  .toggle {
+    position: absolute;
+    right: 0;
+    width: 80px;
+    height: 80px;
+    background-color: rgb(12, 7, 20);
+    border: white 5px solid;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.15);
+    font-size: 2rem;
+    transition: 1.25s;
+  }
+  .menu.activeMenu .toggle {
+    color: #3bcff8;
+    border: #3bcff8 5px solid;
+    box-shadow: 0 0 10px #3bcff8;
+  }
+  .menu.activeMenu #info{
+    transform: rotate(90deg);
+  }
+  .menu.activeMenu #tecnology{
+    transform: rotate(calc(90deg + (180deg / 3 * 1) ));
+    transition-delay: calc(0.1s * 1);
+  }
+  .menu.activeMenu #projects{
+    transform: rotate(calc(90deg + (180deg / 3 * 2) ));
+    transition-delay: calc(0.1s * 2);
+  }
+  .menu.activeMenu #contact{
+    transform: rotate(calc(90deg + (180deg / 3 * 3) ));
+    transition-delay: calc(0.1s * 3);
+  }
+
+  .icon1{
+    transform:rotate(-90deg);
+  }
+  .icon2{
+    transform:rotate(calc(-90deg - (180deg / 3 * 1) ));
+  }
+  .icon3{
+    transform:rotate(calc(-90deg - (180deg / 3 * 2) ));
+  }
+  .icon4{
+    transform:rotate(calc(-90deg - (180deg / 3 * 3) ));
+  }
