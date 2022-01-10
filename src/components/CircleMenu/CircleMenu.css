@@ -101,3 +101,7 @@
   .icon4{
     transform:rotate(calc(-90deg - (180deg / 3 * 3) ));
   }
+
+  @media screen and (max-width: 1024px){
+
+  }

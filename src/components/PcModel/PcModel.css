@@ -31,12 +31,26 @@
 .pcScreen{
     height: 95%;
     width: 95%;
-    background-color: black;
     border: 1px darkgray;
     border-radius: 3px;
     padding:10px;
-    color: white;
+    background-color: black;
 }
+/* ------------------------------------ */
+.shutUp{
+    background-image: url(./img/BG-img.jpg) ;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* ------------------------------------ */
+.off{
+    display: none;
+}
+.on{
+    display: block;
+}
+/* ------------------------------------ */
 .pcNake{
     position: relative;
     width: 5%;
@@ -84,4 +98,8 @@
 }
 .nolist{
     list-style: none;
+}
+
+@media screen and (max-width: 1024px){
+    
 }
