@@ -2,6 +2,12 @@ import React, { useEffect, useRef } from "react";
 import { MENU_OPTIONS, PROJECTS_OPTIONS } from "../../constants";
 import "./PcModel.css";
 
+//images
+import img1 from "./img/RAM.png"
+import img2 from "./img/NetFlix.png"
+import img3 from "./img/OnWork.jpg"
+import img4 from "./img/Starbucks.jpg"
+
 //icons
 import { IoLogoGithub } from "react-icons/io5";
 import { IoLogoLinkedin } from "react-icons/io5";
@@ -25,8 +31,8 @@ const PcModel = ({ activeOption, powerState, projectSelect }) => {
                     <div ref={screenDisplay}>
                         {activeOption === MENU_OPTIONS.INFORMATION && (
                             <div className="slide1" >
-                                <h1 className="title">Hola</h1>
-                                <span className="text">Mi nombre es Nahuel Cuaglio, y soy egresado de Tecnico Informatico con gran gusto por el desarrollo web, busco formar parte de una organizacion donde pueda dar mis primeros pasos en el Desarrollo Web Full Stack y aprender sobre nuevas Tecnologias.</span>
+                                <h1 className="title">Presentacion</h1>
+                                <span className="text">Hola. Mi nombre es Nahuel Cuaglio, y soy egresado de Tecnico Informatico con gran gusto por el desarrollo web, busco formar parte de una organizacion donde pueda dar mis primeros pasos en el Desarrollo Web Full Stack y aprender sobre nuevas Tecnologias.</span>
                             </div>
                         )}
                         {activeOption === MENU_OPTIONS.TECHNOLOGIES && (
@@ -44,34 +50,29 @@ const PcModel = ({ activeOption, powerState, projectSelect }) => {
                         {activeOption === MENU_OPTIONS.PROJECTS && (
                             <div className="slide3">
                                 {projectSelect === PROJECTS_OPTIONS.RICK_AND_MORTY && (
-                                    <>
-                                        <img src="" alt="RickAndMorty" />
-                                        <a href="">See More1</a>
-                                    </>
+                                    <a href="https://inspiring-newton-abe152.netlify.app">
+                                        <img src={img1} alt="RickAndMorty" />
+                                    </a>
                                 )}
                                 {projectSelect === PROJECTS_OPTIONS.NETFLIX && (
-                                    <>
-                                        <img src="" alt="Netflix" />
-                                        <a href="">See More2</a>
-                                    </>
+                                    <a href="#">
+                                        <img src={img2} alt="NetFlix" />
+                                    </a>
                                 )}
-                                {projectSelect === PROJECTS_OPTIONS.SPACE && (
-                                    <>
-                                        <img src="" alt="Space" />
-                                        <a href="">See More3</a>
-                                    </>
+                                {projectSelect === PROJECTS_OPTIONS.STARBUCKS && (
+                                    <a href="https://inspiring-newton-abe152.netlify.app">
+                                        <img src={img4} alt="Starbucks" />
+                                    </a>
                                 )}
                                 {projectSelect === PROJECTS_OPTIONS.DEVPLACE_CHALLENGE && (
-                                    <>
-                                        <img src="" alt="Challenge" />
-                                        <a href="">See More4</a>
-                                    </>
+                                    <a href="#">
+                                        <img src={img3} alt="Devplace_Challenge" />
+                                    </a>
                                 )}
                                 {projectSelect === PROJECTS_OPTIONS.SIN_IGUAL && (
-                                    <>
-                                        <img src="" alt="SinIgual" />
-                                        <a href="">See More5</a>
-                                    </>
+                                    <a href="#">
+                                        <img className="notWork" src={img3} alt="SinIgual" />
+                                    </a>
                                 )}
                             </div>
                         )}

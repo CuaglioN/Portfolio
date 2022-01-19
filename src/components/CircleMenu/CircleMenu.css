@@ -44,11 +44,10 @@
     cursor: pointer;
     padding:10px;
   }
-  .option-icon:hover {
+  .option:hover {
     height: 61px;
     width: 61px;
     transition: 0.3s;
-    transform: translateX(-1px);
   }
   .toggle {
     position: absolute;
@@ -104,4 +103,36 @@
 
   @media screen and (max-width: 1024px){
 
+
+    /* animation */
+    .option {
+      transform-origin: 250%;
+    }
+    .menu.activeMenu #info{
+      transform: rotate(180deg);
+    }
+    .menu.activeMenu #tecnology{
+      transform: rotate(calc(180deg + (90deg / 3 * 1) ));
+      transition-delay: calc(0.1s * 1);
+    }
+    .menu.activeMenu #projects{
+      transform: rotate(calc(180deg + (90deg / 3 * 2)));
+      transition-delay: calc(0.1s * 2);
+    }
+    .menu.activeMenu #contact{
+      transform: rotate(calc(180deg + (90deg / 3 * 3) ));
+      transition-delay: calc(0.1s * 3);
+    }
+    .icon1{
+      transform:rotate(-180deg);
+    }
+    .icon2{
+      transform: rotate(calc(180deg + (-90deg / 3 * 1) ));
+    }
+    .icon3{
+      transform: rotate(calc(180deg + (-90deg / 3 * 2)));
+    }
+    .icon4{
+      transform: rotate(calc(180deg + (-90deg / 3 * 3)));
+    }
   }

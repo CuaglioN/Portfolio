@@ -8,7 +8,7 @@ export const MENU_OPTIONS = {
 export const PROJECTS_OPTIONS = {
     RICK_AND_MORTY: "ram",
     NETFLIX: "netflix",
-    SPACE: "space",
+    STARBUCKS: "starbucks",
     DEVPLACE_CHALLENGE: "challenge",
     SIN_IGUAL: "sinigual"
 }
